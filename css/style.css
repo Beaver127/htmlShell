@@ -1,0 +1,335 @@
+﻿@charset "utf-8";
+
+/*Для всего документа*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #00ff3b;
+    padding: 0;
+}
+
+html {height: 100%;}
+
+/*Для шапки и низа сайта*/
+header, footer {
+    width: 98%;
+    background-color: black;
+    float: left;
+    
+}
+header {
+    padding: 1%;
+    border-bottom: 2px solid #00ff3b;
+}
+#logo {
+    color: #00ff3b;
+    
+    font-size: 2em;
+    font-family: Comic Sans MS, sans-serif;
+}
+#logo:hover {
+    color: black;
+    background-color: #00ff3b;
+}
+.contact {
+    color: #00ff3b;
+    font-size: 1.5em;
+    font-family: Comic Sans MS, sans-serif;
+    margin-left: 10px;
+}
+input[type=text].field {
+    color: #00ff3b;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid #00ff3b;
+    padding: 5px;
+    margin-left: 20px;
+}
+input[type=text].field:focus {
+    border: 2px solid black;
+}
+footer img {
+    float: left;
+    width: 10%;
+}
+footer {
+    height: auto;
+    padding: 1%;
+    border-top: 2px solid #00ff3b;
+    margin-top: 10px;
+    padding-bottom: 2%;
+}
+
+/*Для простого меню*/
+#menu {
+color: #00ff3b;
+font-family: Comic Sans MS, sans-serif;
+font-size: 1.7em;
+}
+#menu hr {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#menuHrefs a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #00ff3b;
+}
+#menuHrefs a:hover {
+    color: black;
+    background-color: #00ff3b;
+}
+#wrapper {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+#wrapper #articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+#wrapper #articles article {
+    float: left;
+    border: 1px solid #00ff3b;;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    min-height: 400px;
+    
+}
+
+@media(min-width: 900px) {
+#wrapper #articles article {
+    width: 31%;
+    margin-right: 2%;
+}}
+@media(max-width: 899px) and (min-width: 700px) {
+#wrapper #articles article {
+    width: 80%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}}
+@media(max-width: 699px) {
+#wrapper #articles article {
+    width: 100%;
+    margin-bottom: 10px;
+}}
+
+
+#wrapper #articles article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #00ff3b;
+    margin-bottom: 10px;
+}
+#wrapper #articles article h3 {
+    width: 90%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 1.7em;
+    color: #00ff3b;
+}
+#wrapper #articles article p {
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1.7em;
+}
+#wrapper #articles article a {
+    float: left;
+    padding: 10px 5px;
+    background-color: black;
+    margin-left: 5px;
+    border-radius: 20px;
+    color: #00ff3b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#wrapper #articles article a:hover {
+    background-color: #00ff3b;
+    color: red;
+}
+
+/*Центральный блок сайта*/
+#main_soc_block {
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px solid #00ff3b;
+    border-top: 2px solid #00ff3b;
+    margin: 20px 0;
+    float: left;
+    background: url("../images/bg.jpg") repeat left;
+    height: 300px;
+}
+#main_soc_block_in {
+    text-align: center;
+    padding: 1%;
+    height: 200px;
+    background-color: black;
+    border: 1px solid #00ff3b;
+    border-radius: 7px;
+    width: 500px;
+    max-width: 98%;
+    box-sizing: border-box;
+    height: 
+    
+}
+#main_soc_block_in a {
+    float: left;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 6px;
+    color: #00ff3b;
+    margin-left: 35%;
+    margin-top: 3%;
+    
+}
+
+/*Разделитель хедера и футера*/
+#page-wrap:after {
+    content: "";
+    display: block;
+} 
+
+footer,#page-wrap:after {height: 10px}
+
+#page-wrap {
+    min-height: 93%;
+    margin-bottom: -10px;
+}
+
+/*Для тега body*/
+body {
+    width: 100%;
+    height: 100%;
+    color: #00ff3b;;
+    background: black;
+    font-size: 1em;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 135%;
+}
+
+/*Для ссылок*/
+a {
+    color: #00ff3b;
+    text-decoration: none;
+    transition: all.3s ease;
+    -moz-transition: all.3s ease;
+    -webkit-transition: all.3s ease;
+    -ms-transition: all.3s ease;
+}
+
+a:hover {
+    color: black;
+    background-color: #00ff3b;
+    text-decoration: none;
+    transition: all.3s ease;
+    -moz-transition: all.3s ease;
+    -webkit-transition: all.3s ease;
+    -ms-transition: all.3s ease;
+}
+
+a:active {
+    color: red;
+}
+/*При выделении контента*/
+::selection {background: #00ff3b;color: black;}
+::-moz-selection {background: #00ff3b;color: black;}
+
+/*Для изображений*/
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+/*Позиционирование по правому боку*/
+.right {float: right;}
+/*Позиционирование по левому боку*/
+.left {float: left;}
+/*переход на новую строку*/
+.clear {clear: both;}
+
+/*для странички о нас*/
+#about_us {
+    width: 60%;
+    float: left;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid #00ff3b;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#columnRight {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid #00ff3b;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+/*Стили для странички обратная связь*/
+form {
+    width: 60%;
+    margin-left: 20%;
+    float: left;
+}
+form input {
+    background-color: black;
+    color: #00ff3b;
+    border-radius: 5px;
+    border: 2px solid #00ff3b;
+    padding: 5px;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    width: 40%;
+}
+form input:focus, form textarea:focus{border: 2px solid #00ff3b;}
+
+form label {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form textarea {
+    width: 60%;
+    float: left;
+    background-color: black;
+    border: 2px solid #00ff3b;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.7em;
+    color: #00ff3b;
+}
+form #send {
+    float: left;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #00ff3b;
+    cursor: pointer;
+}
+form #send:hover {
+    background-color: #00ff3b;
+    color: black;
+    border: 2px solid black;
+}

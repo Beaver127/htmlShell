@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- cell оптимизация сайта найти в инете подробную инфу
+   -->
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=UTF-8"/>
+    <meta name="keywords" content="library, read,
+    ключевое слово"/>
+    <meta name="description" content="Описание сайта" />
+    <link href="css/style.css" rel="stylesheet" 
+    type="text/css" />
+    <!-- иконка сайта вверху -->
+    <link href="images/w.png" rel="shortcut icon"
+    type="image/x-icon" />
+     
+    <title>My site</title>
+</head>
+<body>
+   <div id="page-wrap">
+    <header>
+    <a href="index.html" title="На главную" id="logo">Last Beaver Library</a>
+    <span class="contact">
+    <a href="about.html" 
+    title="Информация о нас">О нас</a></span>
+    <input type="text" class="field" 
+    placeholder="Поиск по сайту" />
+    <span class="right"> 
+    <span class="contact">
+    <a href="reg.html" 
+    title="Зарегистрировать акаунт">Регистрация</a>
+    </span>
+    <span class="contact">
+    <a href="auth.html" 
+    title="Войти в профиль">Вход</a>
+    </span>
+    </span>
+    </header>
+    
+    <div class="clear"><br /></div>
+    <center>
+        <div id="menu">Разделы<hr /></div>
+        <div id="menuHrefs">
+            <a href="about.html">О нас</a>
+            <a href="feedback.html">Обратная связь</a>
+            <a href="auth.html">Вход</a>
+            <a href="reg.html">Регистрация</a>
+        </div>
+    </center>
+    
+    <div id="wrapper">
+        <div id="articles">
+             <form action="" method="get">
+                 <label for="subject">Тема сообщения</label>
+                 <input id="subject" name="subject" type="text" placeholder="Тема сообщения"/>
+                 
+                 <label for="email">Email</label>
+                 <input type="email" id="email"
+                 name="email" placeholder="address@example.com"/>
+                 
+                 <label for="name">Введите ваше имя</label>
+                 <input id="name" name="name"
+                  type="text" placeholder="Введите ваше имя"/>
+                 
+                 <label for="message">Введите ваше сообщение</label>
+                 <textarea id="message" name="message" placeholder="Введите ваше сообщение"></textarea>
+                 
+                 <input type="submit" value="Отправить" 
+                 id="send" name="send"/>
+             </form>
+        </div>
+    </div>
+    </div>
+        
+    <footer>
+        <span class="left">Все права защищены &copy; 2019</span> 
+        <span class="right">Соц. кнопки
+        <img src="images/vk.png" alt="VK"
+         title="Вконтакте" />
+        </span>
+    </footer>
+</body>
+</html>
